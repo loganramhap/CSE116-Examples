@@ -30,7 +30,7 @@ class Car(var directions: List[Direction]) extends Actor{
         println("driving to intersection: " + directions.head.intersection)
         self ! directions.head
       }else{
-        // arrived at destination
+        println("Arrived at Intersection")
       }
 
     // Used for testing
